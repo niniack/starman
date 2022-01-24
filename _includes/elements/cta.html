@@ -1,0 +1,24 @@
+<div class="container">
+
+    <div class="row py-5">
+
+        <div class="col-sm-8 d-flex align-items-center">
+            <h2 class="cta-text"> {{ site.cta_text}} <br> <span class="small-hero"> {{ site.cta_highlight}} </span>
+            </h2>
+        </div>
+
+
+        <div class="col-sm-4">
+            {% for bullet in site.cta_bullets %}
+            <div class="row py-2">
+
+                <div class="cta-text">{{ bullet.title }}</div>
+                <div class="cta-subtext"> {{ bullet.subtitle }} </div>
+
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+
+</div>

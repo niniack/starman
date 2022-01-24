@@ -1,0 +1,73 @@
+### Site Settings ###
+title: Haloship
+
+### Navbar Settings ###
+
+logo_src: light.svg
+
+nav_exclude: # The following paths are excluded from navbar
+  - pages/tags.html
+  - pages/404.html
+  - pages/index.md
+  - documentation/partials/** # For Documentation Only
+
+nav_button_text: View on Github
+nav_button_link: https://github.com/haloship # Must be full link
+
+### Landing Settings ###
+
+big_hero_text: Meet SPACE @ NYUAD # Necessary for Hero Panel on Landing
+small_hero_text: This is NYUAD's Rocketry Team
+hero_url: https://source.unsplash.com/yJv97tE7GDM
+
+cta_text: Engineering high-powered rocketry
+cta_highlight: the modern way. # Option: Can Leave Blank
+
+cta_bullets:
+  - title: "No Glue in 2022."
+    subtitle: "Modular and designed for disassembly."
+  - title: "Free and Open."
+    subtitle: "Documentation that helps everybody."
+  - title: "Lorem Ipsum."
+    subtitle: "What is another thing we care about this year?"
+
+### Author Info ###
+author:
+  name: nyuad.space
+
+### Posts ###
+permalink: /blog/:title
+
+### Collections ###
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name
+  elements: # For Documentation Only
+    output: true # For Documentation Only
+
+### Defaults for collections ###
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "page"
+  - scope: # For Documentation Only
+      path: "" # For Documentation Only
+      type: "elements" # For Documentation Only
+    values: # For Documentation Only
+      layout: "element" # For Documentation Only
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: false # Set to true to enable disqus comments
+
+### Exclude from processing ###
+exclude:
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - "*.log"
+  - index.html

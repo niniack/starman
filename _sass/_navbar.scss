@@ -1,0 +1,62 @@
+  .link-after {
+    content: "";
+    display: block;
+    height: 0.15em;
+    background: $danger;
+  }
+
+  .btn-primary {
+    color: $light;
+    background-color:  $primary;
+    border-color: $primary;
+    opacity: 0.7;
+
+    &:hover,
+    &:focus,
+    &:hover::after {
+      color: $light;
+      background-color:  $primary;
+      border-color: $primary;
+      opacity: 1.0;
+    }
+  }
+  
+  .nav-link {
+    color: $light;
+    opacity: 0.7;
+    &::after {
+      @extend .link-after;
+      width: 0;
+      transition: width 0.35s;
+    }
+
+    &:hover {
+      color: $light;
+      opacity: 1.0;
+    }
+  
+    &:hover::after {
+      width: 100%;
+    }
+  }
+  
+  .nav-item.active {
+    font-weight: bold;
+    
+    &::after {
+      @extend .link-after;
+      width: 100% !important;
+    }
+  }
+
+  .nav-link,
+  .btn-primary {
+    font-size: medium;
+  }
+  
+  .navbar-brand {
+    margin-bottom: -14px;
+    &::after {
+      margin-top: -0.25em;
+    }
+  }

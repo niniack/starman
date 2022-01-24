@@ -1,0 +1,36 @@
+.small-hero,
+.big-hero,
+.cta-text {
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+.cta-subtext{
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+.small-hero{
+    color: $primary;
+}
+
+.big-hero {
+    text-shadow: 1px 1px;
+    color: $light;
+}
+
+.hero-image {
+    border-radius: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.cta-text,
+.cta-subtext{
+    color: $light;
+}
+

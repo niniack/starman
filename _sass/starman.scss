@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+// Custom Fonts
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400&family=Montserrat:wght@400;800&family=Open+Sans&display=swap");
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "variables",
+        "base",
+        "footer",
+        "navbar",
+        "theme",
+        "landing";
